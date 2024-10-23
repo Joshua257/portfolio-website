@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joshua Baatjes Portfolio</title>
+    <style>
+        body {
+            font-family: 'Comfortaa', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f3f4f6; /* Light background */
+            color: #333; /* Dark text for readability */
+        }
+
+        h1, h2, h3 {
+            font-family: 'Comic Sans MS', cursive;
+            color: #6a1b9a; /* Purple for headings */
+        }
+
+        nav {
+            padding: 10px;
+            text-align: center;
+            background-color: #3f51b5; /* Blue for the navigation bar */
+        }
+
+        nav a {
+            text-decoration: none;
+            margin: 0 15px;
+            color: #ffffff; /* White text for navigation links */
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ff4081; /* Pink on hover */
+        }
+
+        .section {
+            padding: 50px;
+            text-align: center;
+            background-color: #ffffff; /* White background for sections */
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+            margin: 20px; /* Spacing between sections */
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 50px;
+        }
+
+        .project-card {
+            padding: 20px;
+            border: 1px solid #000;
+            border-radius: 10px;
+            background-color: #e1bee7; /* Light pink for project cards */
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #3f51b5; /* Blue for footer */
+            color: #ffffff; /* White text for footer */
+        }
+
+        input, textarea {
+            padding: 10px;
+            margin: 10px;
+            border-radius: 5px;
+            border: 1px solid #000;
+            width: calc(100% - 42px); /* Full width minus padding */
+            box-sizing: border-box; /* Include padding in width calculation */
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #ff4081; /* Pink button */
+            border: none;
+            border-radius: 5px;
+            color: #fff; /* White text on button */
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #c51162; /* Darker pink on hover */
+        }
+
+        .contact-form {
+            text-align: left;
+            display: inline-block;
+            background-color: #f3f4f6; /* Light background for form */
+            padding: 20px;
+            border-radius: 10px; /* Rounded corners for form */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#skills">Skills</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+    </nav>
+
+    <section id="home" class="section">
+        <h1>Greetings, fellow interviewers!</h1>
+        <p>My name is Joshua Baatjes</p>
+        <p>I am an IT Professional. My skills include Programming mainly in Java, HTML and CSS. Besides Programming I am also adept in Microsoft and Google Suite as well as App Development. I have been a Professional for a while now and have only grown in skill considerably. My goal right now is to grow into an extremely comfortable working and living position (preferable in the IT Sector).</p>
+    </section>
+
+    <section id="Short Bio about me" class="section">
+        <p>I Graduated from the Cape Peninsula University of Technology with an Advanced Diploma in Applications Development. I am currently looking for a work position where I can grow my skills in the IT sector and be comfortable.</p>
+    </section>
+
+    <section id="skills" class="section">
+        <h2>My Skills</h2>
+        <ul>
+            <li>Programming: CSS, Java, C#, HTML</li>
+            <li>App Development</li>
+            <li>Business Growth and Development</li>
+            <li>Multi-Media Targeting</li>
+            <li>Networking</li>
+        </ul>
+    </section>
+
+    <section id="portfolio" class="section">
+        <h2>Portfolio</h2>
+        <div class="projects">
+            <div class="project-card">
+                <h3>Business Concept</h3>
+                <p>A concept for an NPO created by a colleague and me.</p>
+                <a href="https://docs.google.com/presentation/d/1yLpdICeahgSKEAjo9qRoBkRkYk_YG2dUS7vBf0QtIuI/edit#slide=id.p">Business Concept</a>
+                <p><strong>Programs used:</strong> Google Slides, Canva, Google Docs, Microsoft Word, HTML</p>
+            </div>
+            <div class="project-card">
+                <h3>Business Website</h3>
+                <p>A website created for the NGO business concept.</p>
+                <a href="https://hopeful-horizons-foundation.mailchimpsites.com/">Business Website</a>
+                <p><strong>Programs used:</strong> IBS Paint, Notepad++, Google Docs</p>
+            </div>
+            <div class="project-card">
+                <h3>Second Business Website</h3>
+                <p>A more polished website of my own creation.</p>
+                <a href="https://drive.google.com/drive/folders/1EvTBYwHsFv3YHncQGH8ZJ-f7J9JsUmPG?usp=drive_link">Second Business Website</a>
+                <p><strong>Programs used:</strong> Microsoft Word, Google Docs, Google Slides, Notepad++, IBS Paint</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <h2>Contact Me</h2>
+        <div class="contact-form">
+            <form action="mailto:joshuabaatjes4@gmail.com" method="POST" enctype="text/plain">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br>
+                <label for="message">Feedback:</label><br>
+                <textarea id="message" name="message" rows="4" required></textarea><br>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <p>My journey into the world of technology has been shaped by both personal passions and experiences growing up.</p>
+        <p>I’ve always been fascinated by how things work, especially technology. This curiosity has driven me to explore interests like music, video games, and IT.</p>
+        <p>Growing up, I witnessed the stress of financial struggles. Watching adults around me worry about money instilled in me the importance of stability. I’ve set my sights on a career in IT to enjoy what I love while ensuring financial security.</p>
+    </section>
+
+    <footer>
+        <p>Joshua Baatjes | Email: joshuabaatjes4@gmail.com</p>
+    </footer>
+
+</body>
+
+</html>
